@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Bicycle Booking</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <h1>New Booking</h1>
+
+    <div class="form-container">
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Name </label>
+            <input type="text" class="form-control" id="edName">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Mobile No </label>
+            <input type="number" class="form-control" id="edMobile">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Bicycle No.</label>
+            <input type="text" class="form-control" id="edBicycleNo">
+        </div>
+
+        <div>
+            <button class="btn btn-check" id="btnSave">Check out</button>
+        </div>
+
+    </div>
+
+    <table class="table" id="userTable">
+        <thead>
+            <tr>
+                <th scope="col">ID</td>
+                <th scope="col">Name</td>
+                <th scope="col">Mobile No.</td>
+                <th scope="col">Bicyle No</td>
+                <th scope="col">Time</td>
+                 <th scope="col">Action</td>
+        
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+<!-- Add this somewhere in your HTML -->
+<div id="toast" style="
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;">
+</div>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
